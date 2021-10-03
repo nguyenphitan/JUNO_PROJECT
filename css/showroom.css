@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.container{
+    margin: auto;
+    max-width: 100%;
+    overflow: auto;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    background-color: var(--main-bg-color);
+    overflow-x: hidden;
+}
+h4, p, h1{ 
+    text-align: center;
+    padding: 2px;
+}
+
+.sectionContentStore{
+    display: flex;
+    width: 600px;
+    margin: auto;
+    padding: 5px;
+
+}
+.sectionTitleStore {
+    text-align: center;
+	margin: 0 0 30px 0;
+}
+.sectionTitleStore h1 {
+	margin: 30px 0 10px 0;
+	font-weight: normal;
+	font-size: 26px;
+}
+.change-huyen.activeSelect {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.storeIntro{ 
+    padding-top: 50px;
+}
+.inline-block {
+    display: inline-block;
+ }
+.column-img {
+    float: left;
+    padding: 10px;
+    position: relative;
+    max-width: 33.33%;
+}
+.column-img img {
+    width: 100%;
+}
+.column-img figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    background:rgba(255,255,255,0.5);
+}
+.row-img:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .main-content { 
+      padding-left: 10px;
+  }
+  /* responsive */
+/* <740px */
+@media only screen and (max-width: 46.1875em) {
+   
+}
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+   
+    
+}
