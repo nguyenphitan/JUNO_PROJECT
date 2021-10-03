@@ -223,3 +223,16 @@ closeInputOverlay.onclick = function() {
     inputOverlay.style.transform = 'translateX(100%)';
     overlay.style.display = 'none';
 }
+
+// list product overlay
+const openProductOverlay = document.querySelector('.nav__item.item2 .fa-chevron-right');
+const productOverlay = document.querySelector('.product__overlay');
+const titleProductOverlay = document.querySelector('.product__overlay__menu .fa-chevron-left');
+openProductOverlay.onclick = function() {
+    productOverlay.style.transform = 'translateX(0%)';
+    overlay.style.display = 'block';
+}
+
+titleProductOverlay.onclick = function() {
+    productOverlay.style.transform = 'translateX(-100%)';
+}
