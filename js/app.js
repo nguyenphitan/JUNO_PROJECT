@@ -1,4 +1,5 @@
 //-----------------detail product------------------------//
+
 //------su kien click vao thay doi anh----------------//
 
 const bigImg = document.querySelector(".product-content-left-big-img img");
@@ -164,3 +165,61 @@ closecartOvelay.onclick = () => {
     overlay.style.display = 'none';
 }
 
+// footer
+const hotlineExtend = document.querySelector('.hotline__extend');
+const hotlineClick = document.querySelector('.hotline__extend__click');
+const hotlineOverlay = document.querySelector('.hotline__overlay');
+const closeHotlineOverlay = document.querySelector('.hotline__overlay .fa-sort-up');
+hotlineClick.onclick = () => {
+    hotlineOverlay.style.display = 'block';
+    hotlineExtend.style.display = 'none';
+}
+
+closeHotlineOverlay.onclick = () => {
+    hotlineOverlay.style.display = 'none';
+    hotlineExtend.style.display = 'block';
+}
+
+// Navbar
+const bar = document.querySelector('.bar__icon');
+const navOverlay = document.querySelector('.nav__overlay'); 
+const overlay = document.querySelector('.overlay');
+
+bar.onclick = function() {
+    navOverlay.style.transform = 'translateX(0%)';
+    bar.style.display = 'none';
+    overlay.style.display = 'block';
+}
+
+// Menu
+const closeMenu = document.querySelector('.nav__overlay__menu .fa-chevron-left');
+closeMenu.onclick = function() {
+    navOverlay.style.transform = 'translateX(-100%)';
+    bar.style.display = 'block';
+    overlay.style.display = 'none';
+    productOverlay.style.transform = 'translateX(-100%)';
+}
+
+// Overlay
+overlay.onclick = function() {
+    navOverlay.style.transform = 'translateX(-100%)';
+    bar.style.display = 'block';
+    overlay.style.display = 'none';
+    inputOverlay.style.transform = 'translateX(100%)';
+    cartOverlay.style.transform = 'translateX(100%)';
+    productOverlay.style.transform = 'translateX(-100%)';
+}
+
+// Input search overlay
+const inputSearch = document.querySelector('.input__search');
+const inputOverlay = document.querySelector('.input__overlay');
+const closeInputOverlay = document.querySelector('.input__overlay .fa-times');
+inputSearch.onclick = function() {
+    inputOverlay.style.transform = 'translateX(0%)';
+    overlay.style.display = 'block';
+}
+
+closeInputOverlay.onclick = function() {
+    inputOverlay.style.transform = 'translateX(100%)';
+    overlay.style.display = 'none';
+}
