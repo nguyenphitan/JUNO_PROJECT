@@ -184,7 +184,6 @@ a {
 
 /* User */
 .login__overlay {
-    display: flex;
     position: fixed;
     top: 20%;
     left: 30%;
@@ -1012,7 +1011,6 @@ a {
 
     /* user */
     .login__overlay {
-        display: flex;
         position: fixed;
         top: 30%;
         left: 15%;
@@ -1103,7 +1101,6 @@ a {
 
     /* user */
     .login__overlay {
-        display: flex;
         position: fixed;
         top: 10%;
         left: 1%;
