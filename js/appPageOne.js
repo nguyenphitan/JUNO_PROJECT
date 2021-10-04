@@ -241,6 +241,7 @@ btnSignIn.onclick = () => {
         }
         if( ok == 1 ) {
             alert('Welcome ' + inputSignIn[0].value + '!');
+            overlay.style.display = 'none';
             loginOverlay.style.display = 'none';
         }
         else alert('Tài khoản hoặc mật khẩu không đúng!');
