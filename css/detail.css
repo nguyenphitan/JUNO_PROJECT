@@ -249,6 +249,9 @@ body {
     justify-content: center;
     align-items: center;
 }
+.product-content-policy-title-chinhsach h5{
+    margin-left: 50px;
+}
 .product-content-policy-title-huongdan{
     border-bottom: 1px solid #000;
     display: flex;

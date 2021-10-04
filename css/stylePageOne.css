@@ -89,7 +89,7 @@ a {
     top: 60px;
     left: 0;
     right: 0;
-    transform: translateY(-120%);
+    transform: translateY(-150%);
     transition: transform linear 0.2s;
     animation: fadeIn ease-in 0.2s;
     z-index: 2;
@@ -181,6 +181,137 @@ a {
     width: 15%;
     cursor: pointer;
 }
+
+/* User */
+.login__overlay {
+    display: flex;
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+    bottom: 20%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10%;
+    overflow: hidden;
+    display: none;
+    z-index: 2;
+}
+
+/* sign in */
+.sign__in {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    /* display: none; */
+    transform: translateX(0%);
+    position: absolute;
+    transition: transform linear 0.2s;
+}
+
+.sign__in__container {
+    width: 90%;
+    height: 80%;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.user__name__in p, .password__in p, .forgot__pass{
+    margin: 1em auto 0.5em;
+}
+
+.forgot__pass {
+    width: 60%;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.forgot__pass span:hover {
+    border-bottom: 0.1px solid rgb(196, 193, 193);
+    cursor: pointer;
+}
+
+.user__name__in .input__user__name__in, .password__in .input__password__in,
+.user__name__up .input__user__name__up, .password__up .input__password__up,
+.password__up__again .input__password__up__again {
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 0.5px solid rgb(168, 160, 160);
+}
+
+.sign__in input:focus, .sign__up input:focus {
+    outline: none;
+}
+
+.sign__in__btn {
+    color: #fff;
+    width: 50%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #ff74a1;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.sign__in__btn:hover, .sign__up__btn:hover {
+    color: rgb(243, 236, 236);
+}
+
+/* sign up */
+.sign__up {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    /* display: none; */
+    transform: translateX(100%);
+    position: absolute;
+    transition: transform linear 0.2s;
+}
+
+.sign__up__container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sign__up__title .back {
+    float: left;
+    cursor: pointer;
+}
+
+.user__name__up p , .password__up p, .password__up__again p {
+    margin: 0.5em auto;
+    width: 60%;
+    /* text-align: left; */
+}
+
+.sign__up__btn {
+    color: #fff;
+    width: 50%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #ff74a1;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+
+
+
 
 /* Cart */
 .cart {
@@ -879,6 +1010,17 @@ a {
         border: none;
     }
 
+    /* user */
+    .login__overlay {
+        display: flex;
+        position: fixed;
+        top: 30%;
+        left: 15%;
+        right: 15%;
+        bottom: 30%;
+    }
+
+
     /* cart */
     .cart{
         height: 100%;
@@ -957,6 +1099,27 @@ a {
     /* card overlay */
     .cart__overlay {
         width: 100%;
+    }
+
+    /* user */
+    .login__overlay {
+        display: flex;
+        position: fixed;
+        top: 10%;
+        left: 1%;
+        right: 1%;
+        bottom: 10%;
+        border-radius: 2em;
+    }
+
+    .sign__up__container, .sign__in__container {
+        width: 100%;
+    }
+
+    .sign__up__title .back {
+        left: 0.6em;
+        position: absolute;
+        cursor: pointer;
     }
 
 

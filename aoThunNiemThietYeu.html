@@ -30,11 +30,14 @@
 
             <!-- nav-list -->
             <div class="nav__list">
-                <a href="allProductNew.html">
+                <a href="allNewProduct.html">
                     <div class="list__item list__item1">HÀNG MỚI</div>
                 </a>
                 <a href="./allProductNew.html">
-                    <div class="list__item list__item2">SẢN PHẨM</div>
+                    <div class="list__item list__item2">
+                        SẢN PHẨM
+                        <i class="fa fa-sort-down"></i>
+                    </div>
                 </a>
                 <a href="./aoThunNiemThietYeu.html">
                     <div class="list__item list__item3">ÁO THUN "NIỀM VUI THIẾT YẾU"</div>
@@ -57,24 +60,56 @@
 
             <!-- cart -->
             <div class="cart">
-                <!-- <div class="action">
-                    <div class="profile">
-                        <img src="images/Account/OIP.jpg">
-                    </div>
-                    <div class="menu">
-                        <h3>Name</h3>
-                        <ul>
-                            <li><img src="./images/Account/accountIcon.jpg"><a href="Login.html">My profile</a></li>
-                            <li><img src="./images/Account/inbox.jpg"><a href="#">Inbox Me</a></li>
-                            <li><img src="./images/Account/download.png"><a href="#">Log out</a></li>
-                        </ul>
-                    </div>
-                </div> -->
-                <a href="./Login.html">
-                    <i class="fal fa-user-alt"></i>
-                </a>
+                <i class="fal fa-user-alt"></i>
                 <i class="fal fa-shopping-bag"></i>
             </div>
+
+            <!-- login overlay -->
+            <div class="login__overlay">
+                <!-- sign in -->
+                <div class="sign__in">
+                    <div class="sign__in__container">
+                        <h4 class="sign__in__title">Welcome Back!</h4>
+                        <div class="user__name__in">
+                            <p>Tên đăng nhập:</p>
+                            <input class="input__user__name__in" type="text" placeholder="Tên đăng nhập...">
+                        </div>
+                        <div class="password__in">
+                            <p>Mật khẩu:</p>
+                            <input class="input__password__in" type="password" placeholder="Mật khẩu...">
+                        </div>
+                        <div class="forgot__pass">
+                            <span class="create__account">Đăng ký</span>
+                            <span>Quên mật khẩu?</span>
+                        </div>
+                        <div class="sign__in__btn">Đăng Nhập</div>
+                    </div>
+                </div>
+
+                <!-- sign up -->
+                <div class="sign__up">
+                    <div class="sign__up__container">
+                        <h4 class="sign__up__title">
+                            <i class="fal fa-long-arrow-left back"></i>
+                            Đăng Ký Tài Khoản
+                        </h4>
+                        <div class="user__name__up">
+                            <p>Tên đăng nhập:</p>
+                            <input class="input__user__name__up" type="text" placeholder="Tên đăng nhập...">
+                        </div>
+                        <div class="password__up">
+                            <p>Mật khẩu:</p>
+                            <input class="input__password__up" type="password" placeholder="Mật khẩu...">
+                        </div>
+                        <div class="password__up__again">
+                            <p>Xác nhận mật khẩu:</p>
+                            <input class="input__password__up__again" type="password" placeholder="Xác nhận mật khẩu...">
+                        </div>
+                        <div class="sign__up__btn">Đăng Ký</div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <!-- Nav-overlay -->
@@ -89,7 +124,7 @@
                     </div>
                     <!-- list -->
                     <div class="nav__overlay__list">
-                        <a href="./allProductNew.html">
+                        <a href="allNewProduct.html">
                             <div class="nav__item item1">Hàng Mới</div>
                         </a>
                         <div class="nav__item item2">
@@ -114,10 +149,8 @@
                 <div class="nav__overlay__footer">
                     <div class="top">
                         <div class="top__left">
-                            <a href="./Login.html">
-                                <i class="fal fa-user-alt"></i>
-                                TÀI KHOẢN CỦA TÔI
-                            </a>
+                            <i class="fal fa-user-alt"></i>
+                            TÀI KHOẢN CỦA TÔI  
                         </div>
                         <div class="top__right">
                             MEMBERSHIP
@@ -133,7 +166,7 @@
                 </div>
             </div>
         </div>
-        <!-- list product overlay -->
+        <!-- list product overlay mobile -->
         <div class="product__overlay">
             <div class="product__overlay__content">
                 <div class="product__content__top">
@@ -143,13 +176,21 @@
                     </div>
                     <!-- list -->
                     <div class="product__overlay__list">
-                        <a href="#">
+                        <a href="proShoes.html">
                             <div class="product__overlay__item pr__over__item1">Giày</div>
                         </a>
-                        <div class="product__overlay__item pr__over__item2">Túi</div>
-                        <div class="product__overlay__item pr__over__item3">Phụ Kiện</div>
-                        <div class="product__overlay__item pr__over__item4">Áo Thun</div>
-                        <div class="product__overlay__item pr__over__item5">Bộ Sưu Tập</div>
+                        <a href="proBags.html">
+                            <div class="product__overlay__item pr__over__item2">Túi</div>
+                        </a>
+                        <a href="proGlasses2.html">
+                            <div class="product__overlay__item pr__over__item3">Phụ Kiện</div>
+                        </a>
+                        <a href="proTShirt.html">
+                            <div class="product__overlay__item pr__over__item4">Áo Thun</div>
+                        </a>
+                        <a href="./allProductNew.html">
+                            <div class="product__overlay__item pr__over__item5">Bộ Sưu Tập</div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -186,39 +227,68 @@
 
     </div>
 
-    <!-- list product overlay -->
+    <!-- list product -->
     <div class="list__product">
         <div class="product__container">
             <!-- list content -->
             <div class="product__content">
                 <div class="pr__content__item shoes">
-                    <div class="product__item">GIÀY</div>
-                    <div class="product__item">Giày Snackers</div>
-                    <div class="product__item">Giày cao gót</div>
+                    <a href="proShoes.html">
+                        <div class="product__item">GIÀY</div>
+                    </a>
+                    <a href="proSneaker.html">
+                        <div class="product__item">Giày Snackers</div>
+                    </a>
+                    <a href="proHighHeels.html">
+                        <div class="product__item">Giày cao gót</div>
+                    </a>
                 </div>
 
                 <div class="pr__content__item bags">
-                    <div class="product__item">TÚI</div>
-                    <div class="product__item">Túi cỡ nhỏ</div>
-                    <div class="product__item">Túi cỡ trung</div>
+                    <a href="proBags.html">
+                        <div class="product__item">TÚI</div>
+                    </a>
+                    <a href="proSmallBag.html">
+                        <div class="product__item">Túi cỡ nhỏ</div>
+                    </a>
+                    <a href="proMediumBag.html">
+                        <div class="product__item">Túi cỡ trung</div>
+                    </a>
                 </div>
 
                 <div class="pr__content__item accessory">
-                    <div class="product__item">PHỤ KIỆN</div>
-                    <div class="product__item">Mắt kính</div>
-                    <div class="product__item">Trang sức</div>
+                    <a href="proGlasses2.html">
+                        <div class="product__item">PHỤ KIỆN</div>
+                    </a>
+                    <a href="proGlasses.html">
+                        <div class="product__item">Mắt kính</div>
+                    </a>
+                    <a href="proGlasses.html">
+                        <div class="product__item">Trang Sức</div>
+                    </a>
                 </div>
-
                 <div class="pr__content__item t-shirt">
-                    <div class="product__item">ÁO THUN</div>
-                    <div class="product__item">Top giàu sang</div>
-                    <div class="product__item">Bánh mì Sài Gòn</div>
+                    <a href="proTShirt.html">
+                        <div class="product__item">ÁO THUN</div>
+                    </a>
+                    <a href="detail_ao_thun_tgs.html">
+                        <div class="product__item">Top giàu sang</div>
+                    </a>
+                    <a href="detail_ao_thun_bmsg.html">
+                        <div class="product__item">Bánh mì Sài Gòn</div>
+                    </a>
                 </div>
 
                 <div class="pr__content__item collection">
-                    <div class="product__item">BỘ SƯU TẬP</div>
-                    <div class="product__item">Juno Snackers Thả Thính Mùa Hè</div>
-                    <div class="product__item">Summer Taste</div>
+                    <a href="./allProductNew.html">
+                        <div class="product__item">BỘ SƯU TẬP</div>
+                    </a>
+                    <a href="./proSneaker.html">
+                        <div class="product__item">Juno Snackers Thả Thính Mùa Hè</div>
+                    </a>
+                    <a href="./aoThunNiemThietYeu.html">
+                        <div class="product__item">Summer Taste</div>
+                    </a>
                 </div>
             </div>
 
@@ -267,7 +337,9 @@
         <div class="TSF__section2">
             <div class="card-deck">
                 <div class="card">
-                  <img class="card-img-top" src="./images/AoThunNiemVuiThietYeu/color_den-hanh-tap-the-duc-2_9247c6d13b37476b94aac9b6a7af1225.jpg" alt="Card image cap">
+                  <a href="./detail_ao_thun_tgs.html">
+                    <img class="card-img-top" src="./images/AoThunNiemVuiThietYeu/color_den-hanh-tap-the-duc-2_9247c6d13b37476b94aac9b6a7af1225.jpg" alt="Card image cap">
+                    </a>
                 </div>
                 <div class="card">
                   <img class="card-img-top" src="./images/AoThunNiemVuiThietYeu/aw_3_cf8852891f7a43cbb75f5c52d4c133e7.jpg" alt="Card image cap">
@@ -288,7 +360,9 @@
                     </div>
                   </div>
                 <div class="card">
-                  <img class="card-img-top" src="./images/AoThunNiemVuiThietYeu/color_hong-banh-mi-op-la-3_58b78b3504ea4088936dcc479f998d9d.jpg" alt="Card image cap">
+                  <a href="./detail_ao_thun_bmsg.html">
+                    <img class="card-img-top" src="./images/AoThunNiemVuiThietYeu/color_hong-banh-mi-op-la-3_58b78b3504ea4088936dcc479f998d9d.jpg" alt="Card image cap">
+                </a>
                 </div>
             </div>
         </div>
@@ -312,7 +386,9 @@
             <div class="TSF__s4__container">
                 <div class="card-columns">
                     <div class="card">
-                       <img class="card-img-top" src="./images/pageOneImages/xanh_ath010_1_b1099d52acf242d195a2b2d3b69325f3.jpg" alt="">
+                       <a href="./detail_ao_thun_tgs.html">
+                        <img class="card-img-top" src="./images/pageOneImages/xanh_ath010_1_b1099d52acf242d195a2b2d3b69325f3.jpg" alt="">
+                    </a>
                     </div>
                     <div class="card p-3">
                        <blockquote class="blockquote mb-0 card-body">
@@ -338,7 +414,9 @@
                        </div>
 
                         <div class="card-body">
-                            <img class="card-img-top" src="./images/AoThunNiemVuiThietYeu/color_vang-ol_9466ff3764ce4f24b2743be011961de7.jpg" alt="">
+                            <a href="./detail_ao_thun_bmsg.html">
+                                <img class="card-img-top" src="./images/AoThunNiemVuiThietYeu/color_vang-ol_9466ff3764ce4f24b2743be011961de7.jpg" alt="">
+                            </a>
                         </div>
                     </div>
                     <!--  -->
@@ -361,7 +439,9 @@
 
                     <!--  -->
                     <div class="card">
-                        <img class="card-img-top" src="./images/pageOneImages/den_ath011_1_7ae9c8ef67084144bfb559da825c5f3b_grande.jpg" alt="">
+                        <a href="./detail_ao_thun_tgs.html">
+                            <img class="card-img-top" src="./images/pageOneImages/den_ath011_1_7ae9c8ef67084144bfb559da825c5f3b_grande.jpg" alt="">
+                        </a>
                        <div class="card-body">
                           <h5 class="card-title">Card title</h5>
                           <p class="card-text">
@@ -392,8 +472,6 @@
         </div>
 
     </div>
-
-
 
 
 
@@ -457,6 +535,7 @@
             <span>© 2019 JUNO. Công ty CP - SX - TM - DV JUNO.</span>
         </div>
     </div>
+
 
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

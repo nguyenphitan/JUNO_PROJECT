@@ -185,6 +185,7 @@ renderProducts = (products) => {
         let prod = `
             <div class="col-4 col-md-6 col-sm-12">
                 <div class="product-card">
+                <a class ="detail_sneaker" href="detailKinh1.html">
                     <div class="product-card-img">
                         <img class = "img_1" src="${e.image1}" alt="">
                         <img class = "img_2" src="${e.image2}" alt="">
@@ -193,6 +194,7 @@ renderProducts = (products) => {
                         <img class = "img_5" src="${e.image5}" alt="">
                         <img class = "img_6" src="${e.image6}" alt="">
                     </div>
+                </a>
                     <div class="product-card-info">
                         <div class="product-btn">
                             <button class="btn-flat btn-hover btn-shop-now" id="show-now1">

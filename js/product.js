@@ -208,16 +208,19 @@ let product_list = document.querySelector('#products')
 renderProducts = (products) => {
     products.forEach(e => {
             let prod = `
+            
             <div class="col-4 col-md-6 col-sm-12">
-                <div class="product-card">
-                    <div class="product-card-img">
-                        <img class = "img_1" src="${e.image1}" alt="">
-                        <img class = "img_2" src="${e.image2}" alt="">
-                        <img class = "img_3" src="${e.image3}" alt="">
-                        <img class = "img_4" src="${e.image4}" alt="">
-                        <img class = "img_5" src="${e.image5}" alt="">
-                        <img class = "img_6" src="${e.image6}" alt="">
-                    </div>
+                    <div class="product-card">
+                    <a class ="detail_sneaker" href="detailgiaySneaker.html">
+                        <div class="product-card-img">
+                            <img class = "img_1" src="${e.image1}" alt="">
+                            <img class = "img_2" src="${e.image2}" alt="">
+                            <img class = "img_3" src="${e.image3}" alt="">
+                            <img class = "img_4" src="${e.image4}" alt="">
+                            <img class = "img_5" src="${e.image5}" alt="">
+                            <img class = "img_6" src="${e.image6}" alt="">
+                        </div>
+                    </a>
                     <div class="product-card-info">
                         <div class="product-btn">
                             <button class="btn-flat btn-hover btn-shop-now" id="show-now1">
@@ -240,11 +243,10 @@ renderProducts = (products) => {
                             <span><del>${e.old_price}</del></span>
                             <span class="curr-price">${e.curr_price}</span>
                         </div>
-                        
                     </div>
-                    
-                    
-                </div>
+            </div>
+                
+                
             </div>
         `
         product_list.insertAdjacentHTML("beforeend", prod)        

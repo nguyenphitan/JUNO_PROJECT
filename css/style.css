@@ -48,7 +48,9 @@ li {
     list-style-type: none;
 }
 
-
+.detail_sneaker{
+    width: 100%;
+}
 .container {
     max-width: 90%;
     margin: auto;

@@ -59,24 +59,56 @@
 
             <!-- cart -->
             <div class="cart">
-                <!-- <div class="action">
-                    <div class="profile">
-                        <img src="images/Account/OIP.jpg">
-                    </div>
-                    <div class="menu">
-                        <h3>Name</h3>
-                        <ul>
-                            <li><img src="./images/Account/accountIcon.jpg"><a href="Login.html">My profile</a></li>
-                            <li><img src="./images/Account/inbox.jpg"><a href="#">Inbox Me</a></li>
-                            <li><img src="./images/Account/download.png"><a href="#">Log out</a></li>
-                        </ul>
-                    </div>
-                </div> -->
-                <a href="./Login.html">
-                    <i class="fal fa-user-alt"></i>
-                </a>
+                <i class="fal fa-user-alt"></i>
                 <i class="fal fa-shopping-bag"></i>
             </div>
+
+            <!-- login overlay -->
+            <div class="login__overlay">
+                <!-- sign in -->
+                <div class="sign__in">
+                    <div class="sign__in__container">
+                        <h4 class="sign__in__title">Welcome Back!</h4>
+                        <div class="user__name__in">
+                            <p>Tên đăng nhập:</p>
+                            <input class="input__user__name__in" type="text" placeholder="Tên đăng nhập...">
+                        </div>
+                        <div class="password__in">
+                            <p>Mật khẩu:</p>
+                            <input class="input__password__in" type="password" placeholder="Mật khẩu...">
+                        </div>
+                        <div class="forgot__pass">
+                            <span class="create__account">Đăng ký</span>
+                            <span>Quên mật khẩu?</span>
+                        </div>
+                        <div class="sign__in__btn">Đăng Nhập</div>
+                    </div>
+                </div>
+
+                <!-- sign up -->
+                <div class="sign__up">
+                    <div class="sign__up__container">
+                        <h4 class="sign__up__title">
+                            <i class="fal fa-long-arrow-left back"></i>
+                            Đăng Ký Tài Khoản
+                        </h4>
+                        <div class="user__name__up">
+                            <p>Tên đăng nhập:</p>
+                            <input class="input__user__name__up" type="text" placeholder="Tên đăng nhập...">
+                        </div>
+                        <div class="password__up">
+                            <p>Mật khẩu:</p>
+                            <input class="input__password__up" type="password" placeholder="Mật khẩu...">
+                        </div>
+                        <div class="password__up__again">
+                            <p>Xác nhận mật khẩu:</p>
+                            <input class="input__password__up__again" type="password" placeholder="Xác nhận mật khẩu...">
+                        </div>
+                        <div class="sign__up__btn">Đăng Ký</div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <!-- Nav-overlay -->
@@ -116,10 +148,8 @@
                 <div class="nav__overlay__footer">
                     <div class="top">
                         <div class="top__left">
-                            <a href="./Login.html">
-                                <i class="fal fa-user-alt"></i>
-                                TÀI KHOẢN CỦA TÔI
-                            </a>
+                            <i class="fal fa-user-alt"></i>
+                            TÀI KHOẢN CỦA TÔI  
                         </div>
                         <div class="top__right">
                             MEMBERSHIP
