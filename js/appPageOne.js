@@ -139,7 +139,74 @@ closecartOvelay.onclick = () => {
 // Container_content
 // section1
 // card
+
 // choose color
+
+// const areaChooseColor = document.querySelectorAll('.card__item');
+// const yourChoose = document.querySelectorAll('.your__choose');
+// console.log(yourChoose);
+// for(let i=0 ; i<areaChooseColor.length ; i++) {
+//     areaChooseColor[i].addEventListener('mouseout', () => {
+//         for(let j=0 ; j<yourChoose.length ; j++) {
+//             yourChoose[j].style.display = 'none';
+//         }
+//     })
+// }
+
+const chooseColor1 = document.querySelectorAll('.color__item1');
+const chooseColor2 = document.querySelectorAll('.color__item2');
+const chooseColor3 = document.querySelectorAll('.color__item3');
+
+const tShirtColor1 = document.querySelectorAll('.your__choose.choose__color1');
+const tShirtColor2 = document.querySelectorAll('.your__choose.choose__color2');
+const tShirtColor3 = document.querySelectorAll('.your__choose.choose__color3');
+
+for(let i=0 ; i<chooseColor1.length ; i++) {
+    chooseColor1[i].onclick = () => {
+        tShirtColor1[i].style.display = 'block';
+        tShirtColor2[i].style.display = 'none';
+        tShirtColor3[i].style.display = 'none';
+    }
+
+    chooseColor1[i].addEventListener('mousemove', () => {
+        tShirtColor1[i].style.display = 'block';
+        tShirtColor2[i].style.display = 'none';
+        tShirtColor3[i].style.display = 'none';
+    })
+}
+
+for(let i=0 ; i<chooseColor2.length ; i++) {
+    chooseColor2[i].onclick = () => {
+        tShirtColor2[i].style.display = 'block';
+        tShirtColor1[i].style.display = 'none';
+        tShirtColor3[i].style.display = 'none';
+    }
+
+    chooseColor2[i].addEventListener('mousemove', () => {
+        tShirtColor2[i].style.display = 'block';
+        tShirtColor1[i].style.display = 'none';
+        tShirtColor3[i].style.display = 'none';
+    })
+}
+
+for(let i=0 ; i<chooseColor3.length ; i++) {
+    chooseColor3[i].onclick = () => {
+        tShirtColor3[i].style.display = 'block';
+        tShirtColor2[i].style.display = 'none';
+        tShirtColor1[i].style.display = 'none';
+    }
+
+    chooseColor3[i].addEventListener('mousemove', () => {
+        tShirtColor3[i].style.display = 'block';
+        tShirtColor2[i].style.display = 'none';
+        tShirtColor1[i].style.display = 'none';
+    })
+}
+
+
+
+
+
 
 
 // footer

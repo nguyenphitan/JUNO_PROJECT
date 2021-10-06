@@ -182,7 +182,7 @@ a {
     cursor: pointer;
 }
 
-/* User */
+/* user */
 .login__overlay {
     position: fixed;
     top: 20%;
@@ -194,6 +194,10 @@ a {
     overflow: hidden;
     display: none;
     z-index: 2;
+}
+
+.login__overlay input {
+    padding-left: 0.7em;
 }
 
 /* sign in */
@@ -448,6 +452,39 @@ a {
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
 }
+
+.color__item3__black {
+    background: url(../images/pageOneImages/color_den_ath011_ec30ff54601d43ddba4b07160fbfbdba.jpg) no-repeat;
+    background-size: contain;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.color__item2__yellow {
+    background: url(../images/pageOneImages/color_vang_ath014_63a292c65787466b99aa857a0f1415a5.jpg) no-repeat;
+    background-size: contain;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+/* choose click */
+.your__choose {
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+}
+
+.section4 .your__choose {
+    background-color: #f1f1f1;
+}
+
+
 
 /* buy now */
 .buy__now {
