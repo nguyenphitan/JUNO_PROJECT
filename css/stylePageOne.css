@@ -783,7 +783,7 @@ a {
 .bar__icon {
     font-size: 1.5em;
     margin-right: 1em;
-    display: none;
+    display: none !important;
 }
 
 .bar__item {
@@ -995,7 +995,7 @@ a {
 
 
 /* overlay */
-.overlay {
+.overlay, .overlay__user {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -1079,7 +1079,7 @@ a {
 
     /* bars */
     .bar__icon {
-        display: block;
+        display: block !important;
     }
 
 
