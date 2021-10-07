@@ -3,6 +3,8 @@ let products = [
         name1: 'Giày Cao Gót Mũi Nhọn Hồng',
         name2: 'Giày Cao Gót Mũi Nhọn Đen',
         name3: 'Giày Cao Gót Mũi Nhọn Trắng',
+        type: 'giaymulesbitmuitrang.html',
+
         color1: 'Hồng',
         color2: 'Đen',
         color3: 'Trắng',
@@ -19,6 +21,7 @@ let products = [
         name1: 'Giày Cao Gót Gắn Dây Kem',
         name2: 'Giày Cao Gót Gắn Dây Hồng',
         name3: 'Giày Cao Gót Gắn Dây Đen',
+        type: 'giay_cao_got_mui_nhon_gan_day.html',
         color1: 'Kem',
         color2: 'Hồng',
         color3: 'Đen',
@@ -35,6 +38,7 @@ let products = [
         name1: 'Giày Cao Gót Khóa Gài Đen',
         name2: 'Giày Cao Gót Khóa Gài Hồng',
         name3: 'Giày Cao Gót Khóa Gài Trắng',
+        type: 'giaycaogotkhoacaiden.html',
         color1: 'Đen',
         color2: 'Hồng',
         color3: 'Trắng',
@@ -51,6 +55,7 @@ let products = [
         name1: 'Giày Mules Bít Mũi Khóa Trắng',
         name2: 'Giày Mules Bít Mũi Khóa Đen',
         name3: 'Giày Mules Bít Mũi Khóa Nâu',
+        type: 'giay_cao_got_quai_ngang.html',
         color1: 'Trắng',
         color2: 'Đen',
         color3: 'Nâu',
@@ -67,6 +72,7 @@ let products = [
         name1: 'Giày Cao Gót Quai Ngang Kem',
         name2: 'Giày Cao Gót Quai Ngang Đen',
         name3: 'Giày Cao Gót Quai Ngang Trắng',
+        type: 'giaycaogotquaingangden.html',
         color1: 'Kem',
         color2: 'Đen',
         color3: 'Trắng',
@@ -83,6 +89,7 @@ let products = [
         name1: 'Giày Cao Gót Slingback Trắng',
         name2: 'Giày Cao Gót Slingback Hồng',
         name3: 'Giày Cao Gót Slingback Đen',
+        type: 'giaycaogotSlinkBlack.html',
         color1: 'Trắng',
         color2: 'Hồng',
         color3: 'Đen',
@@ -104,7 +111,7 @@ renderProducts = (products) => {
             let prod = `
             <div class="col-4 col-md-6 col-sm-12">
                 <div class="product-card">
-                <a class ="detail_sneaker" href="giaydetail.html">
+                <a class ="detail_sneaker" href="${e.type}">
                 <div class="product-card-img">
                     <img class = "img_1" src="${e.image1}" alt="">
                     <img class = "img_2" src="${e.image2}" alt="">

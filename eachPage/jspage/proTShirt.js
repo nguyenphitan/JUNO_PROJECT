@@ -3,6 +3,7 @@ let products = [
         name1: 'Áo Thun "Top Giàu Sang" Trắng',
         name2: 'Áo Thun "Top Giàu Sang" Xanh',
         name3: 'Áo Thun "Top Giàu Sang" Hồng',
+        type: 'detail_ao_thun_tgs.html',
         color1:'Trắng',
         color2:'Xanh',
         color3:'Hồng',
@@ -19,6 +20,7 @@ let products = [
         name1: 'Áo Thun "Bánh Mỳ Sài Gòn" Xanh',
         name2: 'Áo Thun "Bánh Mỳ Sài Gòn" Trắng',
         name3: 'Áo Thun "Bánh Mỳ Sài Gòn" Đen',
+        type: 'detail_ao_thun_bmsg.html',
         color1:'Xanh',
         color2:'Trắng',
         color3:'Đen',
@@ -35,6 +37,7 @@ let products = [
         name1: 'Áo Thun "Hành Khỏe Đẹp" Đen',
         name2: 'Áo Thun "Hành Khỏe Đẹp" Xanh',
         name3: 'Áo Thun "Hành Khỏe Đẹp" Trắng',
+        type: 'detail_ao_thun_hkd.html',
         color1:'Đen',
         color2:'Xanh',
         color3:'Trắng',
@@ -51,6 +54,7 @@ let products = [
         name1: 'Áo Thun "Hành Trứng Ấm Êm" Hồng',
         name2: 'Áo Thun "Hành Trứng Ấm Êm" Trắng',
         name3: 'Áo Thun "Hành Trứng Ấm Êm" Vàng',
+        type: 'detail_ao_thun_htae.html',
         color1:'Hồng',
         color2:'Trắng',
         color3:'Vàng',
@@ -67,6 +71,7 @@ let products = [
         name1: 'Áo Thun "Chích Rồi Ôm Tí" Trắng',
         name2: 'Áo Thun "Chích Rồi Ôm Tí" Hồng',
         name3: 'Áo Thun "Chích Rồi Ôm Tí" Vàng',
+        type: 'detail_aothun.html',
         color1:'Trắng',
         color2:'Hồng',
         color3:'Vàng',
@@ -79,25 +84,25 @@ let products = [
         old_price: '300,000₫',
         curr_price: '249,000₫' 
     },
-    
 ]
 
 let product_list = document.querySelector('#products')
 
 renderProducts = (products) => {
     products.forEach(e => {
-        let prod = `
+            let prod = `
             <div class="col-4 col-md-6 col-sm-12">
                 <div class="product-card">
-                <a class ="detail_sneaker" href="detail_aothun.html">
-                <div class="product-card-img">
-                    <img class = "img_1" src="${e.image1}" alt="">
-                    <img class = "img_2" src="${e.image2}" alt="">
-                    <img class = "img_3" src="${e.image3}" alt="">
-                    <img class = "img_4" src="${e.image4}" alt="">
-                    <img class = "img_5" src="${e.image5}" alt="">
-                    <img class = "img_6" src="${e.image6}" alt="">
-                </div>
+                
+                <a class ="detail_sneaker" href="${e.type}">
+                    <div class="product-card-img">
+                        <img class = "img_1" src="${e.image1}" alt="">
+                        <img class = "img_2" src="${e.image2}" alt="">
+                        <img class = "img_3" src="${e.image3}" alt="">
+                        <img class = "img_4" src="${e.image4}" alt="">
+                        <img class = "img_5" src="${e.image5}" alt="">
+                        <img class = "img_6" src="${e.image6}" alt="">
+                    </div>
                 </a>
                     <div class="product-card-info">
                         <div class="product-btn">
@@ -123,24 +128,19 @@ renderProducts = (products) => {
                         </div>
                         
                     </div>
-                
+                    
                     
                 </div>
             </div>
         `
-        product_list.insertAdjacentHTML("beforeend", prod)
+        product_list.insertAdjacentHTML("beforeend", prod)        
+        
     })
+
 }
 
 renderProducts(products)
 // renderProducts(products)
-
-let filter_col = document.querySelector('#filter-col')
-
-document.querySelector('#filter-toggle').addEventListener('click', () => filter_col.classList.toggle('active'))
-
-document.querySelector('#filter-close').addEventListener('click', () => filter_col.classList.toggle('active'))
-
 
 let btn1 = document.querySelectorAll('#show-now1');
 for (let i = 0; i < btn1.length; i++) {
@@ -164,7 +164,7 @@ for (let i = 0; i < btn1.length; i++) {
         ten1[i].style.display = 'block';
         ten2[i].style.display = 'none';
         ten3[i].style.display = 'none';
-        
+
     })
     btn1[i].addEventListener('mouseout', function (event) {
         img1[i].style.display = 'block';
@@ -178,7 +178,7 @@ for (let i = 0; i < btn1.length; i++) {
         ten3[i].style.display = 'none';
     })
 }
-let btn2= document.querySelectorAll('#show-now2');
+let btn2 = document.querySelectorAll('#show-now2');
 for (let i = 0; i < btn2.length; i++) {
     let img1 = document.querySelectorAll('.img_1')
     let img2 = document.querySelectorAll('.img_2')
@@ -248,10 +248,3 @@ for (let i = 0; i < btn3.length; i++) {
         ten3[i].style.display = 'block';
     })
 }
-
-
-
-
-// for(let i = 0; i < btn.length; i++){
-//     console.log(btn[i]);
-// }

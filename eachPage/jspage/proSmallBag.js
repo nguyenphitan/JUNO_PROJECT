@@ -3,6 +3,7 @@ let products = [
         name1: 'Túi Xách Nhỏ Đeo Chéo Kem',
         name2: 'Túi Xách Nhỏ Đeo Chéo Vàng',
         name3: 'Túi Xách Nhỏ Đeo Chéo Đen',
+        type:'tuideonhodeocheonapvienkimloai.html',
         color1:'Kem',
         color2:'Vàng',
         color3:'Đen',
@@ -19,6 +20,7 @@ let products = [
         name1: 'Túi Xách Nhỏ Đeo Vai Đen',
         name2: 'Túi Xách Nhỏ Đeo Vai Xanh',
         name3: 'Túi Xách Nhỏ Đeo Vai Nâu',
+        type:'tuixachnhodeovaiden.html',
         color1:'Đen',
         color2:'Xanh',
         color3:'Nâu',
@@ -35,6 +37,7 @@ let products = [
         name1: 'Túi Xách Nhỏ Top Khóa Nâu',
         name2: 'Túi Xách Nhỏ Top Khóa Đen',
         name3: 'Túi Xách Nhỏ Top Khóa Xanh',
+        type:'tui-xach-nho-top-handle-khoa-kim-loai.html',
         color1:'Nâu',
         color2:'Đen',
         color3:'Xanh',
@@ -51,6 +54,7 @@ let products = [
         name1: 'Túi Xách Nhỏ Top Handle Xanh',
         name2: 'Túi Xách Nhỏ Top Handle Đen',
         name3: 'Túi Xách Nhỏ Top Handle Hồng',
+        type:'tuixachnhotopHandleXanh.html',
         color1:'Xanh',
         color2:'Đen',
         color3:'Hồng',
@@ -67,6 +71,7 @@ let products = [
         name1: 'Túi Xách Nhỏ Phối Khoá Đen',
         name2: 'Túi Xách Nhỏ Phối Khoá Kem',
         name3: 'Túi Xách Nhỏ Phối Khoá Trắng',
+        type:'tuixachnhophoikhoaden.html',
         color1:'Đen',
         color2:'Kem',
         color3:'Trắng',
@@ -83,6 +88,7 @@ let products = [
         name1: 'Túi Xách Nhỏ Phun Đen',
         name2: 'Túi Xách Nhỏ Phun Xanh',
         name3: 'Túi Xách Nhỏ Phun Kem',
+        type:'tui-xach-nho-phun-hieu-ung-loang-mau.html',
         color1:'Đen',
         color2:'Xanh',
         color3:'Kem',
@@ -105,7 +111,7 @@ renderProducts = (products) => {
         let prod = `
             <div class="col-4 col-md-6 col-sm-12">
                 <div class="product-card">
-                <a class ="detail_sneaker" href="detail_tuixach.html">
+                <a class ="detail_sneaker" href="${e.type}">
                 <div class="product-card-img">
                     <img class = "img_1" src="${e.image1}" alt="">
                     <img class = "img_2" src="${e.image2}" alt="">

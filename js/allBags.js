@@ -1,9 +1,9 @@
 let products = [
-    
     {
         name1: 'Túi Xách Nhỏ Đeo Chéo Kem',
         name2: 'Túi Xách Nhỏ Đeo Chéo Vàng',
         name3: 'Túi Xách Nhỏ Đeo Chéo Đen',
+        type:'tuideonhodeocheonapvienkimloai.html',
         color1:'Kem',
         color2:'Vàng',
         color3:'Đen',
@@ -20,6 +20,7 @@ let products = [
         name1: 'Túi Xách Nhỏ Đeo Vai Đen',
         name2: 'Túi Xách Nhỏ Đeo Vai Xanh',
         name3: 'Túi Xách Nhỏ Đeo Vai Nâu',
+        type:'tuixachnhodeovaiden.html',
         color1:'Đen',
         color2:'Xanh',
         color3:'Nâu',
@@ -36,6 +37,7 @@ let products = [
         name1: 'Túi Xách Nhỏ Top Khóa Nâu',
         name2: 'Túi Xách Nhỏ Top Khóa Đen',
         name3: 'Túi Xách Nhỏ Top Khóa Xanh',
+        type:'tui-xach-nho-top-handle-khoa-kim-loai.html',
         color1:'Nâu',
         color2:'Đen',
         color3:'Xanh',
@@ -52,6 +54,7 @@ let products = [
         name1: 'Túi Xách Nhỏ Top Handle Xanh',
         name2: 'Túi Xách Nhỏ Top Handle Đen',
         name3: 'Túi Xách Nhỏ Top Handle Hồng',
+        type:'tuixachnhotopHandleXanh.html',
         color1:'Xanh',
         color2:'Đen',
         color3:'Hồng',
@@ -68,6 +71,7 @@ let products = [
         name1: 'Túi Xách Nhỏ Phối Khoá Đen',
         name2: 'Túi Xách Nhỏ Phối Khoá Kem',
         name3: 'Túi Xách Nhỏ Phối Khoá Trắng',
+        type:'tuixachnhophoikhoaden.html',
         color1:'Đen',
         color2:'Kem',
         color3:'Trắng',
@@ -84,6 +88,7 @@ let products = [
         name1: 'Túi Xách Nhỏ Phun Đen',
         name2: 'Túi Xách Nhỏ Phun Xanh',
         name3: 'Túi Xách Nhỏ Phun Kem',
+        type:'tui-xach-nho-phun-hieu-ung-loang-mau.html',
         color1:'Đen',
         color2:'Xanh',
         color3:'Kem',
@@ -100,6 +105,7 @@ let products = [
         name1: 'Túi Xách Trung Top Handle Kem',
         name2: 'Túi Xách Trung Top Handle Đen',
         name3: 'Túi Xách Trung Top Handle Vàng',
+        type:'tuixachtrungtopHandle.html',
         color1:'Kem',
         color2:'Đen',
         color3:'Vàng',
@@ -116,6 +122,7 @@ let products = [
         name1: 'Túi Xách Trung Trang Trí Đen',
         name2: 'Túi Xách Trung Trang Trí Kem',
         name3: 'Túi Xách Trung Trang Trí Xanh',
+        type:'tuixachtrungtrangtriDen.html',
         color1:'Đen',
         color2:'Kem',
         color3:'Xanh',
@@ -132,6 +139,7 @@ let products = [
         name1: 'Túi Đeo Vai Gắn Charm Xanh',
         name2: 'Túi Đeo Vai Gắn Charm Hồng',
         name3: 'Túi Đeo Vai Gắn Charm Đen',
+        type:'tuixachtrungganCharm.html',
         color1:'Xanh',
         color2:'Hồng',
         color3:'Đen',
@@ -148,6 +156,7 @@ let products = [
         name1: 'Túi Xách Trung The Maze Hồng',
         name2: 'Túi Xách Trung The Maze Xanh',
         name3: 'Túi Xách Trung The Maze Kem',
+        type:'tuixachtrungtheMaze.html',
         color1:'Hồng',
         color2:'Xanh',
         color3:'Kem',
@@ -164,6 +173,7 @@ let products = [
         name1: 'Túi Xách Trung Buckle Flap Hồng',
         name2: 'Túi Xách Trung Buckle Flap Kem',
         name3: 'Túi Xách Trung Buckle Flap Đen',
+        type:'tuixachtrungBuckleFlap.html',
         color1:'Hồng',
         color2:'Kem',
         color3:'Đen',
@@ -180,6 +190,7 @@ let products = [
         name1: 'Túi Xách Trung Buckled Tote Kem',
         name2: 'Túi Xách Trung Buckled Tote Xám',
         name3: 'Túi Xách Trung Buckled Tote Đen',
+        type:'tuixachtrungbuckleTote.html',
         color1:'Kem',
         color2:'Xám',
         color3:'Đen',
@@ -192,25 +203,24 @@ let products = [
         old_price: '795,000₫',
         curr_price: '600,000₫'  
     },
-    
 ]
 
 let product_list = document.querySelector('#products')
 
 renderProducts = (products) => {
     products.forEach(e => {
-            let prod = `
+        let prod = `
             <div class="col-4 col-md-6 col-sm-12">
                 <div class="product-card">
-                <a class ="detail_sneaker" href="detail_tuixach.html">
-                <div class="product-card-img">
-                    <img class = "img_1" src="${e.image1}" alt="">
-                    <img class = "img_2" src="${e.image2}" alt="">
-                    <img class = "img_3" src="${e.image3}" alt="">
-                    <img class = "img_4" src="${e.image4}" alt="">
-                    <img class = "img_5" src="${e.image5}" alt="">
-                    <img class = "img_6" src="${e.image6}" alt="">
-                </div>
+                <a class ="detail_sneaker" href="${e.type}">
+                    <div class="product-card-img">
+                        <img class = "img_1" src="${e.image1}" alt="">
+                        <img class = "img_2" src="${e.image2}" alt="">
+                        <img class = "img_3" src="${e.image3}" alt="">
+                        <img class = "img_4" src="${e.image4}" alt="">
+                        <img class = "img_5" src="${e.image5}" alt="">
+                        <img class = "img_6" src="${e.image6}" alt="">
+                    </div>
                 </a>
                     <div class="product-card-info">
                         <div class="product-btn">
@@ -241,14 +251,19 @@ renderProducts = (products) => {
                 </div>
             </div>
         `
-        product_list.insertAdjacentHTML("beforeend", prod)        
-        
+        product_list.insertAdjacentHTML("beforeend", prod)
     })
-
 }
 
 renderProducts(products)
 // renderProducts(products)
+
+let filter_col = document.querySelector('#filter-col')
+
+document.querySelector('#filter-toggle').addEventListener('click', () => filter_col.classList.toggle('active'))
+
+document.querySelector('#filter-close').addEventListener('click', () => filter_col.classList.toggle('active'))
+
 
 let btn1 = document.querySelectorAll('#show-now1');
 for (let i = 0; i < btn1.length; i++) {
@@ -272,7 +287,7 @@ for (let i = 0; i < btn1.length; i++) {
         ten1[i].style.display = 'block';
         ten2[i].style.display = 'none';
         ten3[i].style.display = 'none';
-
+        
     })
     btn1[i].addEventListener('mouseout', function (event) {
         img1[i].style.display = 'block';
@@ -286,7 +301,7 @@ for (let i = 0; i < btn1.length; i++) {
         ten3[i].style.display = 'none';
     })
 }
-let btn2 = document.querySelectorAll('#show-now2');
+let btn2= document.querySelectorAll('#show-now2');
 for (let i = 0; i < btn2.length; i++) {
     let img1 = document.querySelectorAll('.img_1')
     let img2 = document.querySelectorAll('.img_2')
@@ -356,3 +371,10 @@ for (let i = 0; i < btn3.length; i++) {
         ten3[i].style.display = 'block';
     })
 }
+
+
+
+
+// for(let i = 0; i < btn.length; i++){
+//     console.log(btn[i]);
+// }

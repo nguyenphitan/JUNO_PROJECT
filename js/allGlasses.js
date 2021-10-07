@@ -1,9 +1,10 @@
 let products = [
-
     {
         name1: 'Mắt Kính Vuông Kim Loại Đen',
         name2: 'Mắt Kính Vuông Kim Loại Hồng',
         name3: 'Mắt Kính Vuông Kim Loại Nâu' ,
+        type: 'mat-kinh-vuong-gong-nhua.html',
+
         color1:'Đen',
         color2:'Hồng',
         color3:'Nâu',
@@ -20,6 +21,7 @@ let products = [
         name1: 'Mắt Kính Mắt Mèo Nhựa Đen',
         name2: 'Mắt Kính Mắt Mèo Nhựa Đỏ',
         name3: 'Mắt Kính Mắt Mèo Nhựa Nâu',
+        type: 'kinhmatmeonhua.html',
         color1:'Đen',
         color2:'Đỏ',
         color3:'Nâu',
@@ -36,6 +38,8 @@ let products = [
         name1: 'Mắt Kính Vuông Gọng Nhựa Đen',
         name2: 'Mắt Kính Vuông Gọng Nhựa Hồng',
         name3: 'Mắt Kính Vuông Gọng Nhựa Nâu',
+        type: 'mat-kinh-vuong-kim-loai.html',
+
         color1:'Đen',
         color2:'Hồng',
         color3:'Nâu',
@@ -52,6 +56,7 @@ let products = [
         name1: 'Mắt Kính Vuông Kim Loại Đen',
         name2: 'Mắt Kính Vuông Kim Loại Hồng',
         name3: 'Mắt Kính Vuông Kim Loại Nâu',
+        type: 'kinhmatvuongkimloaihong.html',
         color1:'Đen',
         color2:'Hồng',
         color3:'Nâu',
@@ -68,6 +73,7 @@ let products = [
         name1: 'Mắt Kính Tròn Tràn Viền Xám',
         name2: 'Mắt Kính Tròn Tràn Viền Xanh',
         name3: 'Mắt Kính Tròn Tràn Viền Hồng',
+        type: 'kinhmattranvien.html',
         color1:'Xám',
         color2:'Xanh',
         color3:'Hồng',
@@ -84,6 +90,7 @@ let products = [
         name1: 'Mắt Kính Phi Công Kim Loại Xanh',
         name2: 'Mắt Kính Phi Công Kim Loại Nâu',
         name3: 'Mắt Kính Phi Công Kim Loại Đen',
+        type: 'kinhmatphicong.html',
         color1:'Xanh',
         color2:'Nâu',
         color3:'Đen',
@@ -96,7 +103,6 @@ let products = [
         old_price: '455,000₫',
         curr_price: '300,000₫'
     },
-
 ]
 
 let product_list = document.querySelector('#products')
@@ -106,7 +112,7 @@ renderProducts = (products) => {
             let prod = `
             <div class="col-4 col-md-6 col-sm-12">
                 <div class="product-card">
-                <a class ="detail_sneaker" href="detailKinh1.html">
+                <a class ="detail_sneaker" href="${e.type}">
                 <div class="product-card-img">
                     <img class = "img_1" src="${e.image1}" alt="">
                     <img class = "img_2" src="${e.image2}" alt="">

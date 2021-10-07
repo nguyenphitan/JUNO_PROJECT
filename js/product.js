@@ -3,7 +3,7 @@ let products = [
         name1: 'Sneaker Jelly Cam',
         name2: 'Sneaker Jelly Xanh',
         name3: 'Sneaker Jelly Hồng',
-        type: 'Giày sneakers',
+        type: 'giaysneakerjelly.html',
         color1: 'Cam',
         color2: 'Xanh',
         color3: 'Hồng',
@@ -20,7 +20,7 @@ let products = [
         name1: 'Sneakers Ocean Wave Xanh Tím',
         name2: 'Sneakers Ocean Wave Trắng',
         name3: 'Sneakers Ocean Wave Xám Xanh',
-        type: 'Giày sneakers',
+        type: 'detailgiaySneaker.html',
         color1: 'Xanh',
         color2: 'Trắng',
         color3: 'Xám',
@@ -37,7 +37,7 @@ let products = [
         name1: 'Sneakers Rush Crush Hồng',
         name2: 'Sneakers Rush Crush Xanh',
         name3: 'Sneakers Rush Crush Đen',
-        type: 'Giày sneakers',
+        type: 'detailSneaker2.html',
 
         color1: 'Hồng',
         color2: 'Xanh',
@@ -55,7 +55,7 @@ let products = [
         name1: 'Giày Thể Thao Classic Stick Cam',
         name2: 'Giày Thể Thao Classic Stick Hồng',
         name3: 'Giày Thể Thao Classic Stick Trắng',
-        type: 'Giày sneakers',
+        type: 'giaythethaoclassicwithme.html',
 
         color1: 'Cam',
         color2: 'Hồng',
@@ -73,7 +73,7 @@ let products = [
         name1: 'Trendy Illuminated Chunky Đen',
         name2: 'Trendy Illuminated Chunky Trắng',
         name3: 'Trendy Illuminated Chunky Xanh',
-        type: 'Giày sneakers',
+        type: 'giaytrendylluminateChuppy.html',
 
         color1: 'Đen',
         color2: 'Trắng',
@@ -91,7 +91,7 @@ let products = [
         name1: 'Trendy Bridging Chunky Xanh',
         name2: 'Trendy Bridging Chunky Trắng',
         name3: 'Trendy Bridging Chunky Hồng',
-        type: 'Giày sneakers',
+        type: 'giaytrendybrightchuppy.html',
 
         color1: 'Xanh',
         color2: 'Trắng',
@@ -109,6 +109,8 @@ let products = [
         name1: 'Giày Cao Gót Mũi Nhọn Hồng',
         name2: 'Giày Cao Gót Mũi Nhọn Đen',
         name3: 'Giày Cao Gót Mũi Nhọn Trắng',
+        type: 'giaymulesbitmuitrang.html',
+
         color1: 'Hồng',
         color2: 'Đen',
         color3: 'Trắng',
@@ -125,6 +127,7 @@ let products = [
         name1: 'Giày Cao Gót Gắn Dây Kem',
         name2: 'Giày Cao Gót Gắn Dây Hồng',
         name3: 'Giày Cao Gót Gắn Dây Đen',
+        type: 'giay_cao_got_mui_nhon_gan_day.html',
         color1: 'Kem',
         color2: 'Hồng',
         color3: 'Đen',
@@ -141,6 +144,7 @@ let products = [
         name1: 'Giày Cao Gót Khóa Gài Đen',
         name2: 'Giày Cao Gót Khóa Gài Hồng',
         name3: 'Giày Cao Gót Khóa Gài Trắng',
+        type: 'giaycaogotkhoacaiden.html',
         color1: 'Đen',
         color2: 'Hồng',
         color3: 'Trắng',
@@ -157,6 +161,7 @@ let products = [
         name1: 'Giày Mules Bít Mũi Khóa Trắng',
         name2: 'Giày Mules Bít Mũi Khóa Đen',
         name3: 'Giày Mules Bít Mũi Khóa Nâu',
+        type: 'giay_cao_got_quai_ngang.html',
         color1: 'Trắng',
         color2: 'Đen',
         color3: 'Nâu',
@@ -173,6 +178,7 @@ let products = [
         name1: 'Giày Cao Gót Quai Ngang Kem',
         name2: 'Giày Cao Gót Quai Ngang Đen',
         name3: 'Giày Cao Gót Quai Ngang Trắng',
+        type: 'giaycaogotquaingangden.html',
         color1: 'Kem',
         color2: 'Đen',
         color3: 'Trắng',
@@ -189,6 +195,7 @@ let products = [
         name1: 'Giày Cao Gót Slingback Trắng',
         name2: 'Giày Cao Gót Slingback Hồng',
         name3: 'Giày Cao Gót Slingback Đen',
+        type: 'giaycaogotSlinkBlack.html',
         color1: 'Trắng',
         color2: 'Hồng',
         color3: 'Đen',
@@ -211,7 +218,7 @@ renderProducts = (products) => {
             
             <div class="col-4 col-md-6 col-sm-12">
                     <div class="product-card">
-                    <a class ="detail_sneaker" href="detailgiaySneaker.html">
+                    <a class ="detail_sneaker" href="${e.type}">
                         <div class="product-card-img">
                             <img class = "img_1" src="${e.image1}" alt="">
                             <img class = "img_2" src="${e.image2}" alt="">

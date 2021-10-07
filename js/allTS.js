@@ -3,6 +3,7 @@ let products = [
         name1: 'Áo Thun "Top Giàu Sang" Trắng',
         name2: 'Áo Thun "Top Giàu Sang" Xanh',
         name3: 'Áo Thun "Top Giàu Sang" Hồng',
+        type: 'detail_ao_thun_tgs.html',
         color1:'Trắng',
         color2:'Xanh',
         color3:'Hồng',
@@ -19,6 +20,7 @@ let products = [
         name1: 'Áo Thun "Bánh Mỳ Sài Gòn" Xanh',
         name2: 'Áo Thun "Bánh Mỳ Sài Gòn" Trắng',
         name3: 'Áo Thun "Bánh Mỳ Sài Gòn" Đen',
+        type: 'detail_ao_thun_bmsg.html',
         color1:'Xanh',
         color2:'Trắng',
         color3:'Đen',
@@ -35,6 +37,7 @@ let products = [
         name1: 'Áo Thun "Hành Khỏe Đẹp" Đen',
         name2: 'Áo Thun "Hành Khỏe Đẹp" Xanh',
         name3: 'Áo Thun "Hành Khỏe Đẹp" Trắng',
+        type: 'detail_ao_thun_hkd.html',
         color1:'Đen',
         color2:'Xanh',
         color3:'Trắng',
@@ -51,6 +54,7 @@ let products = [
         name1: 'Áo Thun "Hành Trứng Ấm Êm" Hồng',
         name2: 'Áo Thun "Hành Trứng Ấm Êm" Trắng',
         name3: 'Áo Thun "Hành Trứng Ấm Êm" Vàng',
+        type: 'detail_ao_thun_htae.html',
         color1:'Hồng',
         color2:'Trắng',
         color3:'Vàng',
@@ -67,6 +71,7 @@ let products = [
         name1: 'Áo Thun "Chích Rồi Ôm Tí" Trắng',
         name2: 'Áo Thun "Chích Rồi Ôm Tí" Hồng',
         name3: 'Áo Thun "Chích Rồi Ôm Tí" Vàng',
+        type: 'detail_aothun.html',
         color1:'Trắng',
         color2:'Hồng',
         color3:'Vàng',
@@ -89,7 +94,7 @@ renderProducts = (products) => {
             <div class="col-4 col-md-6 col-sm-12">
                 <div class="product-card">
                 
-                <a class ="detail_sneaker" href="detail_aothun.html">
+                <a class ="detail_sneaker" href="${e.type}">
                     <div class="product-card-img">
                         <img class = "img_1" src="${e.image1}" alt="">
                         <img class = "img_2" src="${e.image2}" alt="">
