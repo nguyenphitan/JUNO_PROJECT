@@ -13,8 +13,12 @@
     font-size: 1.3em;
 }
 
-.nav__overlay, .product__overlay, .input__overlay, .cart__overlay {
-    font-size: 1.8em;
+.nav__overlay, .product__overlay, .input__overlay, .cart__overlay, .nav__overlay p {
+    font-size: 1.2em;
+}
+
+.footer {
+    font-size: 10px;
 }
 
 .fanpage p {
@@ -149,6 +153,9 @@ img{
    html{
        /* font-size: 60%; */
    }
+   .nav__overlay, .product__overlay, .input__overlay, .cart__overlay, .nav__overlay p {
+        font-size: 1.6em;
+    }
 }
 @media only screen and (max-width: 990px) {
     html{
@@ -187,6 +194,9 @@ img{
         width: 80%;
         margin-bottom: 2rem;
     }
+    .nav__overlay, .product__overlay, .input__overlay, .cart__overlay, .nav__overlay p {
+        font-size: 1.2em;
+    }
 }
 @media only screen and (max-width: 500px) {
     html{
@@ -208,6 +218,9 @@ img{
         margin: 0 auto;
         justify-content: space-around;
         margin-bottom: 2rem;
+    }
+    .nav__overlay, .product__overlay, .input__overlay, .cart__overlay, .nav__overlay p {
+        font-size: 1.2em;
     }
 }
 
