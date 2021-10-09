@@ -152,6 +152,7 @@ a {
 .input__search {
     width: 10%;
     display: flex;
+    justify-content: space-between;
 }
 
 .input__content {
@@ -159,6 +160,7 @@ a {
     float: right;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .input__content:hover {
@@ -167,6 +169,7 @@ a {
 
 .input__box {
     width: 80%;
+    margin-right: 5%;
     border: none;
     background-color: rgba(255, 255, 255, 0);
 }
@@ -1013,6 +1016,7 @@ a {
 
 /* PC min */
 @media (min-width: 1025px) and (max-width: 1300px) {
+
     .logo {
         width: 15%;
     }
@@ -1024,6 +1028,11 @@ a {
 
     .cart {
         margin-left: 2%;
+    }
+    
+    /* input search */
+    .input__content {
+        font-size: 0.9em;
     }
 }
 
