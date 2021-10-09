@@ -28,34 +28,6 @@ closeListProduct.onclick = function() {
     listProduct.style.transform = 'translateY(-100%)';
 }
 
-// product.addEventListener("mouseleave", function(event) {
-//     let x = event.clientX;
-//     let y = event.clientY;
-//     if( rect_Product.left <= x && x <= rect_Product.right && y <= rect_Product.bottom + 30) {
-//         listProduct.style.display = 'block';
-//         header.style.backgroundColor = '#fff';
-//     }
-//     else {
-//         listProduct.style.display = 'none';
-//         header.style.backgroundColor = 'rgba(255, 255, 255, 0)';
-//     }
-// })
-
-// listProduct.addEventListener("mousemove", function(event) {
-//     header.style.backgroundColor = '#fff';
-// })
-
-// listProduct.addEventListener("mouseout", function(event) {
-//     header.style.backgroundColor = 'rgba(255, 255, 255, 0)';
-//     if(event.target.classList.contains('product__item') || event.target.classList.contains('product__freeShip') 
-//         || event.target.classList.contains('product__container') || event.target.classList.contains('product__content')
-//         || event.target.classList.contains('pr__content__item') ) {
-//         listProduct.style.display = 'block';
-//         header.style.backgroundColor = '#fff';
-//     }
-//     else listProduct.style.display = 'none';
-// })
-
 // list product overlay
 const openProductOverlay = document.querySelector('.nav__item.item2 .fa-chevron-right');
 const productOverlay = document.querySelector('.product__overlay');
@@ -129,24 +101,14 @@ closecartOvelay.onclick = () => {
     overlay.style.display = 'none';
 }
 
-// Login
-
-
-
-// slider
-
-
-// Container_content
-// section1
-// card
 
 // choose color
 
 // const areaChooseColor = document.querySelectorAll('.card__item');
 // const yourChoose = document.querySelectorAll('.your__choose');
-// console.log(yourChoose);
+
 // for(let i=0 ; i<areaChooseColor.length ; i++) {
-//     areaChooseColor[i].addEventListener('mouseout', () => {
+//     areaChooseColor[i].addEventListener('mouseout', (event) => {
 //         for(let j=0 ; j<yourChoose.length ; j++) {
 //             yourChoose[j].style.display = 'none';
 //         }
@@ -204,11 +166,6 @@ for(let i=0 ; i<chooseColor3.length ; i++) {
 }
 
 
-
-
-
-
-
 // footer
 const hotlineExtend = document.querySelector('.hotline__extend');
 const hotlineClick = document.querySelector('.hotline__extend__click');
@@ -250,6 +207,10 @@ const inputSignUp = document.querySelectorAll('.sign__up .sign__up__container in
 const backSignIn = document.querySelector('.sign__up__title .back');
 const btnSignIn = document.querySelector('.sign__in .sign__in__btn');
 const inputSignIn = document.querySelectorAll('.sign__in .sign__in__container input');
+const forgotPassword = document.querySelector('.forgot__pass .forgot__password');
+const resetPassword = document.querySelector('.sign__up .reset__password');
+const register = document.querySelector('.sign__up .register');
+
 let arrAccount = [];
 
 openLogin.onclick = () => {
@@ -260,6 +221,15 @@ openLogin.onclick = () => {
 createAccount.onclick = () => {
     signIn.style.transform = 'translateX(-100%)';
     signUp.style.transform = 'translateX(0%)';
+    resetPassword.style.display = 'none';
+    register.style.display = 'block';
+}
+
+forgotPassword.onclick = () => {
+    signIn.style.transform = 'translateX(-100%)';
+    signUp.style.transform = 'translateX(0%)';
+    resetPassword.style.display = 'block';
+    register.style.display = 'none';
 }
 
 btnSignUp.onclick = () => {

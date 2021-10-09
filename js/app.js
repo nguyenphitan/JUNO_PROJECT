@@ -151,6 +151,19 @@ if(btnsize4){
     })
 }
 
+// open list product
+const openListProduct = document.querySelector('.nav__list .list__item2');
+const listProduct = document.querySelector('.list__product');
+const closeListProduct = document.querySelector('.product__footer .fa-sort-up');
+openListProduct.addEventListener('mousemove', (event) => {
+    listProduct.style.transform = 'translateY(0%)';
+})
+
+closeListProduct.onclick = () => {
+    listProduct.style.transform = 'translateY(-120%)';
+}
+
+
 // Sự kiện mua ngay
 const cartClick = document.querySelector('.btn1');
 const cartOverlay = document.querySelector('.cart__overlay');
@@ -164,6 +177,15 @@ closecartOvelay.onclick = () => {
     cartOverlay.style.transform = 'translateX(100%)';
     overlay.style.display = 'none';
 }
+
+// cart 
+const openCart = document.querySelector('.cart .fa-shopping-bag');
+openCart.onclick = () => {
+    cartOverlay.style.transform = 'translateX(0%)';
+    overlay.style.display = 'block';
+}
+
+
 
 // footer
 const hotlineExtend = document.querySelector('.hotline__extend');
