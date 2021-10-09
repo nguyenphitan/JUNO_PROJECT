@@ -85,7 +85,7 @@ let products = [
         curr_price: '600,000₫'
     },
     {
-        name1: 'Túi Xách Nhỏ Phun Đen',
+        name1: 'Túi Xách Nhỏ Phun Đen Viền',
         name2: 'Túi Xách Nhỏ Phun Xanh',
         name3: 'Túi Xách Nhỏ Phun Kem',
         type:'tui-xach-nho-phun-hieu-ung-loang-mau.html',

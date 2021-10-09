@@ -1,8 +1,8 @@
 let products = [
     {
-        name1: 'Sneaker Jelly Cam',
-        name2: 'Sneaker Jelly Xanh',
-        name3: 'Sneaker Jelly Hồng',
+        name1: 'Sneaker Basic Jelly Cam Nhạt',
+        name2: 'Sneaker Basic Jelly Xanh Trắng',
+        name3: 'Sneaker Basic Jelly Hồng Đào',
         type: 'giaysneakerjelly.html',
         color1: 'Cam',
         color2: 'Xanh',
