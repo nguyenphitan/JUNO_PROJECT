@@ -345,91 +345,91 @@ btnSignIn.onclick = () => {
 }
 
 
-// User
-const openLogin = document.querySelector('.cart .fa-user-alt');
-const loginOverlay = document.querySelector('.login__overlay');
-const createAccount = document.querySelector('.sign__in .create__account');
-const signUp = document.querySelector('.login__overlay .sign__up');
-const signIn = document.querySelector('.login__overlay .sign__in');
-const btnSignUp = document.querySelector('.sign__up .sign__up__btn');
-const inputSignUp = document.querySelectorAll('.sign__up .sign__up__container input');
-const backSignIn = document.querySelector('.sign__up__title .back');
-const btnSignIn = document.querySelector('.sign__in .sign__in__btn');
-const inputSignIn = document.querySelectorAll('.sign__in .sign__in__container input');
-const forgotPassword = document.querySelector('.forgot__pass .forgot__password');
-const resetPassword = document.querySelector('.sign__up .reset__password');
-const register = document.querySelector('.sign__up .register');
+// // User
+// const openLogin = document.querySelector('.cart .fa-user-alt');
+// const loginOverlay = document.querySelector('.login__overlay');
+// const createAccount = document.querySelector('.sign__in .create__account');
+// const signUp = document.querySelector('.login__overlay .sign__up');
+// const signIn = document.querySelector('.login__overlay .sign__in');
+// const btnSignUp = document.querySelector('.sign__up .sign__up__btn');
+// const inputSignUp = document.querySelectorAll('.sign__up .sign__up__container input');
+// const backSignIn = document.querySelector('.sign__up__title .back');
+// const btnSignIn = document.querySelector('.sign__in .sign__in__btn');
+// const inputSignIn = document.querySelectorAll('.sign__in .sign__in__container input');
+// const forgotPassword = document.querySelector('.forgot__pass .forgot__password');
+// const resetPassword = document.querySelector('.sign__up .reset__password');
+// const register = document.querySelector('.sign__up .register');
 
-let arrAccount = [];
+// let arrAccount = [];
 
-openLogin.onclick = () => {
-    loginOverlay.style.display = 'block';
-    overlay.style.display = 'block';
-}
+// openLogin.onclick = () => {
+//     loginOverlay.style.display = 'block';
+//     overlay.style.display = 'block';
+// }
 
-createAccount.onclick = () => {
-    signIn.style.transform = 'translateX(-100%)';
-    signUp.style.transform = 'translateX(0%)';
-    resetPassword.style.display = 'none';
-    register.style.display = 'block';
-}
+// createAccount.onclick = () => {
+//     signIn.style.transform = 'translateX(-100%)';
+//     signUp.style.transform = 'translateX(0%)';
+//     resetPassword.style.display = 'none';
+//     register.style.display = 'block';
+// }
 
-forgotPassword.onclick = () => {
-    signIn.style.transform = 'translateX(-100%)';
-    signUp.style.transform = 'translateX(0%)';
-    resetPassword.style.display = 'block';
-    register.style.display = 'none';
-}
+// forgotPassword.onclick = () => {
+//     signIn.style.transform = 'translateX(-100%)';
+//     signUp.style.transform = 'translateX(0%)';
+//     resetPassword.style.display = 'block';
+//     register.style.display = 'none';
+// }
 
-btnSignUp.onclick = () => {
-    let check = 1;
-    for(let i=0 ; i<inputSignUp.length ; i++) {
-        if(inputSignUp[i].value === '') {
-            check = 0;
-            break;
-        }
-    }
-    if( inputSignUp[1].value != inputSignUp[2].value ) {
-        check = 0;
-    }
-    if( check == 0 ) alert('Không thành công, mời nhập lại!');
-    else {
-        let accCurrent = {userName: inputSignUp[0].value, password: inputSignUp[1].value};
-        arrAccount.push(accCurrent);
-        signIn.style.transform = 'translateX(0%)';
-        signUp.style.transform = 'translateX(100%)';
-        alert('Tạo tài khoản thành công!');
-    }
-}
+// btnSignUp.onclick = () => {
+//     let check = 1;
+//     for(let i=0 ; i<inputSignUp.length ; i++) {
+//         if(inputSignUp[i].value === '') {
+//             check = 0;
+//             break;
+//         }
+//     }
+//     if( inputSignUp[1].value != inputSignUp[2].value ) {
+//         check = 0;
+//     }
+//     if( check == 0 ) alert('Không thành công, mời nhập lại!');
+//     else {
+//         let accCurrent = {userName: inputSignUp[0].value, password: inputSignUp[1].value};
+//         arrAccount.push(accCurrent);
+//         signIn.style.transform = 'translateX(0%)';
+//         signUp.style.transform = 'translateX(100%)';
+//         alert('Tạo tài khoản thành công!');
+//     }
+// }
 
-backSignIn.onclick = () => {
-    signIn.style.transform = 'translateX(0%)';
-    signUp.style.transform = 'translateX(100%)';
-}
+// backSignIn.onclick = () => {
+//     signIn.style.transform = 'translateX(0%)';
+//     signUp.style.transform = 'translateX(100%)';
+// }
 
-btnSignIn.onclick = () => {
-    console.log(arrAccount);
-    let check = 1;
-    for(let i=0 ; i<inputSignIn.length ; i++) {
-        if(inputSignIn[i].value === '') {
-            check = 0;
-            break;
-        }
-    }
-    if(check == 0) alert('Nhập không hợp lệ!');
-    else {
-        let ok = 0;
-        for(let i=0 ; i<arrAccount.length ; i++) {
-            if( inputSignIn[0].value === arrAccount[i].userName && inputSignIn[1].value === arrAccount[i].password) {
-                ok = 1;
-                break;
-            }
-        }
-        if( ok == 1 ) {
-            alert('Welcome ' + inputSignIn[0].value + '!');
-            overlay.style.display = 'none';
-            loginOverlay.style.display = 'none';
-        }
-        else alert('Tài khoản hoặc mật khẩu không đúng!');
-    }
-}
+// btnSignIn.onclick = () => {
+//     console.log(arrAccount);
+//     let check = 1;
+//     for(let i=0 ; i<inputSignIn.length ; i++) {
+//         if(inputSignIn[i].value === '') {
+//             check = 0;
+//             break;
+//         }
+//     }
+//     if(check == 0) alert('Nhập không hợp lệ!');
+//     else {
+//         let ok = 0;
+//         for(let i=0 ; i<arrAccount.length ; i++) {
+//             if( inputSignIn[0].value === arrAccount[i].userName && inputSignIn[1].value === arrAccount[i].password) {
+//                 ok = 1;
+//                 break;
+//             }
+//         }
+//         if( ok == 1 ) {
+//             alert('Welcome ' + inputSignIn[0].value + '!');
+//             overlay.style.display = 'none';
+//             loginOverlay.style.display = 'none';
+//         }
+//         else alert('Tài khoản hoặc mật khẩu không đúng!');
+//     }
+// }
